@@ -2,47 +2,11 @@
     <title>asoOutlineApp</title>
 </head>
 <body>
-    <div id="listOfSentances">
-        <div class="sentanceContainer">
-            <div id="item1">
-                As I urged you when I went into Macedonia,
-            </div>
-        </div>
-        <div class="sentanceContainer">
-            <div id="item2">
-                stay there in Ephesus so that you may command certain people not to teach false doctrines any longer
-            </div>
-        </div>
-        <div class="sentanceContainer">
-            <div id="item3">
-                 or to devote themselves to myths and endless genealogies.
-            </div>
-        </div>
-    </div>
+    {{#each sentanceFragments}}
+        <p class="sentanceFragment" id="sentance{{@index}}">
+            {{this}}<br>
+        </p>
+    {{/each}}
     
-    <button id="clickMe" onclick="calculateIndent();" >Button</button>
+    <button class="submitBtn">Submit</button>
 </body>
-<script>
-    
-</script>
-
-
-
-
-
-<template name="hello">
-  <button>Click Me</button>
-  <p>You've pressed the button {{counter}} times.</p>
-</template>
-
-<template name="info">
-  <h2>Learn Meteor!</h2>
-  <ul>
-    <li><a href="https://www.meteor.com/try" target="_blank">Do the Tutorial</a></li>
-    <li><a href="http://guide.meteor.com" target="_blank">Follow the Guide</a></li>
-    <li><a href="https://docs.meteor.com" target="_blank">Read the Docs</a></li>
-    <li><a href="https://forums.meteor.com" target="_blank">Discussions</a></li>
-  </ul>
-</template>
-
-

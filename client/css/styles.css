@@ -1,4 +1,4 @@
-.sentanceFragment {
+#item1, #item2, #item3 {
     width: 65%;
     background-color: #29e;
     color: #fff;
@@ -13,4 +13,9 @@
 
 .sentanceContainer {
     width: 95%;
+}
+
+#listOfSentances {
+    list-style-type:none;
+    padding-left: 0px;
 }
